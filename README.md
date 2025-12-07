@@ -63,8 +63,56 @@ Video - https://www.youtube.com/watch?v=-jeoyDJDsSM
 * Event binding () - when you want to send an event from the view to the component.
 * Two-way binding [()] - Data flows from the component to the view and vice versa.
 
-14. Explain the architecture of Angular. 27.48
+14. Explain the architecture of Angular.
+![WhatsApp Image 2025-12-07 at 10 41 25_ebbb5bc1](https://github.com/user-attachments/assets/811e869f-61ed-4028-b523-3c06d80895cb)
 
+1. Template - The HTML view of Angular
+2. Component - Binds the View and Module
+3. Modules - Group components logically
+4. Bindings - Defines how the view and component communicate
+5. Directive - Changes the HTML DOM behavior
+6. Services - Helps to share common logic across the project
+7. DI - helps to inject instances across the constructor.
 
+* Template is an HTML view.
+* A group of components is logically put into a module.
+* To share common logic in the project, we need to have a Service.
+* For service, the object is not actually created; it is injected.
+* When we have services that we want to put across all the components, then they use Dependency Injection.
 
+* Dependency Injection (DI) is a design pattern used in software development to make code more modular, testable and maintainable. Instead of a class creating its own dependencies, those dependencies are provided (injected) from outside.
+<img width="781" height="291" alt="image" src="https://github.com/user-attachments/assets/8233890f-e9d2-4cf0-a5f5-4c7cfd535b77" />
+<img width="771" height="460" alt="image" src="https://github.com/user-attachments/assets/b7a6f5a6-7828-4183-b88d-761083c4d8f6" />
+
+15. What is SPA?
+* Single Page Application
+* Load the UI once and do not reload it again and again.
+
+16. How to implement SPA in Angular?
+* To implement SPA in Angular, we need to use Angular Routing.
+
+17. What is Routing?
+* Routing is a simple collection that has two things URL and when this URL is called, which component to load.
+
+18. What is Lazy Loading?
+* On-demand loading or loading what is essential.
+
+19. How can we implement lazy loading in Angular?
+* Divide your project into modules.
+* Use "loadChildren" to load modules.
+
+20. What are services in Angular?
+* Services help to share common logic across the Angular project.
+
+21. What is Dependency Injection?
+* DI is an application design pattern where, rather than creating object instances from within the component, Angular injects it via the constructor. 
+
+22. What are the benefits of DI?
+* Decoupling - When you add new dependencies, you do not have to change everywhere.
+
+23. What is the difference between ng serve and ng build?
+* "ng serve builds in memory while "ng build" builds on the hard disk. So when you want to go for production "ng build" command is used.
+
+24. Explain the --prod parameter in ng build?
+* Ng build --prod flag compresses your JS file, removes comments, creates GUIDs of your JS files, and makes your application ready for production. 
 
